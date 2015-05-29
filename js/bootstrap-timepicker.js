@@ -758,10 +758,10 @@
           }
         }
       } else {
-        if (time.match(/p/i) !== null) {
-          meridian = 'PM';
-        } else {
+        if (time.match(/a/i) !== null) {
           meridian = 'AM';
+        } else {
+          meridian = 'PM';
         }
 
         time = time.replace(/[^0-9\:]/g, '');
